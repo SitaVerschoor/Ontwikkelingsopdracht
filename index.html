@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css.css" type="text/css">
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Js/gamescript.js" type="text/javascript"></script>
+
+    <!-- Set page title -->
+    <title>Poulefase Simulator</title>
+</head>
+<body id="body">
+
+    <!-- Scoreboard holder -->
+    <div class="game-container">
+        <div class="match-holder">
+            <div class="left-team">
+                <div class="team-container">
+                    <span id="teamName1" data-id="teamName1">TeamName</span>
+                    <span id="score1" data-id="score">0</span>
+                </div>
+            </div>
+
+            <p class="vs">VS</p>
+
+            <div class="right-team">
+                <div class="team-container">
+                    <span id="teamName2" data-id="teamName2">TeamName</span>
+                    <span id="score2" data-id="score">0</span>
+                </div>
+            </div>
+            <p class="match-timer">0</p>
+        </div>
+
+        </div>
+
+        <!-- Info container -->
+        <div class="info-container">
+            <div class="matches">
+                <span id="match-text"  data-id="match-text">Matches:</span>
+                <span id="match-value" data-id="match-value">0</span>
+                <span id="match-max"   data-id="match-max">/ 6</span>
+            </div>
+            <div class="roundsText">
+                <span id="round-text"  data-id="round-text">Rounds:</span>
+                <span id="round-value" data-id="round-value">0</span>
+                <span id="round-max"   data-id="round-max">/ 3</span>
+            </div>
+
+            <!-- Line to separate matches and rounds from other data -->
+            <div class="line"></div>
+
+            <!-- All match reults -->
+            <div class="matchResults">
+                <table class="matchResultTable">
+                    <tr id="resultTH">
+                        <th>Matches</th>
+                    </tr>
+                    <tr id="resultScore">
+                        <td>Score</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Overal results of poulefase -->
+            <div class="resultTeams">
+                <table class="resultTeamsTable">
+                    <tr id="resultTeamsTH">
+                        <th>Teams</th>
+                        <th>Germany</th>
+                        <th>France</th>
+                        <th>Italy</th>
+                        <th>Ireland</th>
+                    </tr>
+                    <tr>
+                        <td>Points</td>
+                        <td id="pointsGermany">0</td>
+                        <td id="pointsFrance">0</td>
+                        <td id="pointsItaly">0</td>
+                        <td id="pointsIreland">0</td>
+                    </tr>
+                    <tr>
+                        <td>Goals</td>
+                        <td id="goalsGermany">0</td>
+                        <td id="goalsFrance">0</td>
+                        <td id="goalsItaly">0</td>
+                        <td id="goalsIreland">0</td>
+                    </tr>
+                    <tr>
+                        <td>Conceded</td>
+                        <td id="conGermany">0</td>
+                        <td id="conFrance">0</td>
+                        <td id="conItaly">0</td>
+                        <td id="conIreland">0</td>
+                    </tr>
+                </table>
+            </div>
+    </div>
+
+    <div class="buttons">
+        <button class="start">Start Match</button>
+    </div>
+
+    <!-- Load in last script at the end of the page -->
+    <script src="Js/teams.js" type="text/javascript"></script>
+</body>
+</html>
+
